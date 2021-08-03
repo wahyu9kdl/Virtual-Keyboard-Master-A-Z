@@ -1,0 +1,140 @@
+logo papan ketikPlugin keyboard di layar (OSK) jQuery yang berfungsi di browser.
+
+Awalnya diposting oleh Jeremy Satterfield di blognya , plugin jQuery dan di Snipplr . Saat ini dikelola oleh Mottie .
+
+Versi NPM devKetergantungan Status Bergabunglah dengan obrolan di https://gitter.im/Mottie/Keyboard Status FOSSA
+
+Fitur ( Demo )
+Kemudahan penggunaan
+Keyboard virtual di layar yang disematkan di dalam jendela browser yang akan muncul saat bidang entri tertentu difokuskan.
+Pengguna kemudian dapat mengetik dan melihat pratinjau input mereka sebelum Menerima atau Membatalkan.
+Itu dapat diatur untuk selalu tetap terbuka, dan untuk tidak menggunakan pratinjau.
+Kemudahan instalasi
+Ambil file sebagai zip, atau dari npm - lihat bagian instalasi di bawah.
+Dalam pengaturan minimal, keyboard bekerja dengan memasukkan:
+jQuery
+tema jQuery UI
+(opsional) utilitas posisi jQuery UI untuk memposisikan keyboard pada elemen input/textarea
+Inisialisasi keyboard - tidak ada opsi yang diperlukan untuk keyboard qwerty.
+Kemudahan pengaturan
+Lampirkan keyboard ke input, area teks, atau elemen yang dapat diedit.
+Tambahkan tata letak keyboard khusus dengan mudah.
+Beberapa tata letak keyboard khusus wilayah disertakan dalam direktori terpisah. Ini adalah pekerjaan yang sedang berjalan dan perlahan berkembang.
+Tambahkan hingga empat set tombol standar ke setiap tata letak yang menggunakan tombol shift dan alt (default, shift, alt, dan alt-shift).
+Tambahkan sejumlah kunci pengubah opsional (kunci meta) untuk menambahkan lebih banyak set kunci.
+Setiap set kunci meta juga dapat menyertakan tombol shift, alt, dan alt-shift.
+Posisikan keyboard di lokasi mana pun di sekitar elemen, atau targetkan elemen lain di halaman (menggunakan utilitas posisi UI jQuery).
+Ubah teks kunci dengan mudah ke bahasa atau simbol apa pun.
+Izinkan input langsung atau kunci jendela pratinjau.
+Tetapkan panjang maksimum untuk konten yang dimasukkan.
+Gulir melalui set tombol lainnya menggunakan roda mouse sambil mengarahkan kursor ke tombol untuk mengabaikan kebutuhan untuk menggunakan tombol alt, shift, atau meta.
+Ketik karakter dengan mudah dengan diakritik. Berikut adalah beberapa contoh kombinasi default:
+'+ vokal ( vokal dengan aksen akut, misalnya '+ e= é)
+`+ vokal ( vokal dengan aksen serius, misalnya `+ e= è)
+"+ vokal ( vokal dengan diaresis, misal "+ e= ë)
+^+ vokal ( vokal dengan aksen sirkumfleksa, misalnya ^+ e= ê)
+~+ huruf tertentu ( huruf dengan tilde, misal ~+ n= ñ, ~+ o= õ)
+Aktifkan, nonaktifkan, atau tambahkan lebih banyak fungsi diakritik sesuai keinginan.
+Gunakan panggilan balik dan pemicu peristiwa yang terjadi saat keyboard dibuka atau ditutup dan saat konten telah diubah, diterima, atau dibatalkan.
+Termasuk dukungan ARIA (mungkin tidak sepenuhnya diterapkan).
+Dibangun dalam tanda air. Ini mengemulasi placeholder HTML5, jika browser tidak mendukungnya.
+Sertakan validasi menggunakan fungsi panggilan balik sehingga metode validasi pihak ketiga dapat digunakan.
+Tema
+Tema jQuery UI digunakan secara default.
+Tema bootstrap ( asli atau gelap ) juga dapat diterapkan.
+Atau tambahkan tema yang sepenuhnya khusus (tanpa menggunakan utilitas posisi UI jQuery):
+Cahaya menggunakan keyboard-basic.css .
+Gelap menggunakan keyboard-dark.css .
+Ekstensi
+Alt-keys : Menampilkan kunci alternatif dalam popup setelah lama mengklik tombol.
+Pelengkapan otomatis : Integrasikan dengan widget pelengkapan otomatis jQuery UI.
+Caret : Tambahkan tanda sisipan dengan gaya khusus.
+Extender : Tambahkan tata letak yang dapat dialihkan (misalnya tombol nomor sakelar)
+Keyset : Tampilkan keyset shift, alt atau meta dalam keyboard virtual - gaya kustom.
+Seluler : Gunakan dengan jQuery Mobile & jQuery Mobile v1.4 .
+Navigasi : Gunakan panah, beranda, akhir & halaman atas/bawah untuk menavigasi bagian dalam keyboard.
+Acak : Acak seluruh keyset atau menurut baris, sekali atau setiap kali keyboard dibuka untuk keamanan tambahan.
+Mengetik : Memungkinkan Anda untuk mensimulasikan pengetikan ke keyboard untuk tujuan demo atau untuk membantu input pengguna.
+Ketergantungan
+Yg dibutuhkan
+jQuery 1.4.3+
+jQuery caret (disertakan dengan sumber)
+Pilihan
+Utilitas Pemosisian UI jQuery (opsional, jika Anda memposisikan keyboard sendiri)
+jQuery UI CSS (dapat disesuaikan) / Bootstrap CSS
+plugin roda mouse jQuery - memungkinkan menggunakan roda mouse untuk menggulir set kunci lainnya
+widget jQuery UI Autocomplete - gunakan dengan ekstensi autocomplete keyboard jQuery
+Instalasi
+Unduh zip atau tar.gz dengan semua file, untuk digunakan di browser.
+Gunakan file dari CDNJS .
+Instal menggunakan npm melalui npm install virtual-keyboard.
+Gunakan dengan:
+Angular ng-virtual-keyboard oleh antonio-spinelli via npm install ng-virtual-keyboard.
+ember-virtual-keyboard oleh SleepyWerewolf .
+react-virtual-keyboard oleh Utzel-Butzel melalui npm install react-virtual-keyboard.
+VueVirtualKeyboard oleh relzhong melalui npm install --save vue-virtual-keyboard.
+Ruby on Rails virtual_keyboard oleh scicasoft melalui gem install virtual_keyboard.
+Kotak Alat VR .
+TypeScript
+Anda dapat menggunakannya dengan TypeScript. Instal TypeScript dan @types/virtual-keyboard ke dalam dependensi dev untuk itu.
+
+Dokumentasi
+Wiki: Beranda | FAQ | Pengaturan | Penggunaan | Opsi ( Tata Letak , Bahasa , Kegunaan , Tindakan ) | Metode | Tema | Catatan
+
+Melakukan
+Tambahkan ekstensi masker input. Saya pikir saya akan mencoba membuatnya kompatibel dengan plugin ini .
+Izinkan memasang keyboard ke elemen yang dapat diedit. Ditambahkan v1.27.0.
+Masalah yang Diketahui
+ALL : Hanya input jenis "teks", "pencarian", "url", "telepon" dan "kata sandi" yang mendukung pemosisian tanda sisipan ( ref ). Menggunakan keyboard ini dengan jenis input lainnya akan merusak tombol tanda sisipan kiri/kanan, spasi mundur, dan hapus (lihat edisi #241 untuk detailnya).
+Seluler : Jika penekanan tombol tertinggal satu karakter, kemungkinan karena plugin roda mouse. Nonaktifkan. Lihat masalah #379 & #411 .
+IE dan Opera :
+Di area teks dengan beberapa carriage return, pemosisian tanda sisipan akan mati saat memposisikan ulang dengan mouse.
+Menggunakan tombol panah kanan dan kiri untuk menavigasi melalui area teks dengan beberapa carriage return bermasalah. Tanda sisipan tidak berperilaku seperti di browser lain saat berpindah dari satu baris ke baris berikutnya. Anda selalu dapat memposisikan ulang tanda sisipan menggunakan mouse.
+Opera : Saat menekan tombol tab saat berada di dalam area teks, semua browser kecuali Opera menambahkan tab ke area teks keyboard virtual.
+Safari : Lihat demo Area Teks QWERTY dengan input terkunci. Saat menggunakan keyboard virtual untuk mengetik, ia memasukkan teks secara terbalik! Ini karena textareas dengan atribut "readonly" selalu mengembalikan nol untuk posisi tanda sisipan.
+Ekstensi Pengetikan :
+Saat menekan "Alt", set tombol akan berubah menjadi set tombol alt, tetapi fokus akan dipindahkan ke menu browser. Menekannya dengan cepat untuk kedua kalinya akan mengembalikan fokus. Ini dibangun ke dalam browser dan tidak mungkin (sejauh yang saya tahu) untuk secara otomatis mengembalikan fokus jendela saat pertama kali alt ditekan.
+Menahan tombol Alt dan mencoba mengetik juga tidak mungkin karena OS Windows mengasumsikan Anda mencoba mengetikkan tombol pintasan untuk mengakses menu browser. Anda masih dapat mengklik tombol di set tombol alt dengan mouse.
+Simulasi pengetikan pada papan ketik terputus saat CapsLock aktif. Masih mencari solusi lintas-browser.
+Berkontribusi
+Instal node.js - ini termasuk npm(manajer paket node).
+Jalankan npm installdi direktori root.
+Jalankan npm install -g grunt-cliuntuk menginstal antarmuka baris perintah grunt.
+Buat perubahan apa pun pada kode.
+Tes unit akan ditambahkan kemudian.
+Jalankan gruntuntuk melakukan build baru di /distfolder.
+Kirim permintaan tarik dari cabang selain master.
+Lisensi
+Kode keyboard: Lisensi MIT untuk semua versi.
+Kode tanda sisipan oleh CF, Wong (Cloudgen): Lisensi MIT
+File tata letak: Sebagian besar berada di bawah WTFPL , kecuali jika file itu sendiri menentukan sebaliknya.
+Status FOSSA
+
+Ubah Log
+Hanya perubahan terbaru yang akan ditampilkan di bawah ini, lihat log wiki untuk melihat versi yang lebih lama.
+
+Versi 1.30.3 (2021-03-14)
+Caret: Perbaiki posisi caret di textarea
+Versi 1.30.2 (2020-05-11)
+Inti
+Jatuhkan konversi jenis input dari angka ke teks.
+Lempar kesalahan pada jenis input yang tidak didukung. Memperbaiki masalah #754 - Ini adalah perubahan besar karena sebelum perpustakaan mengonversi tipe nomor & email menjadi input tipe teks.
+Perbaiki deteksi tipe input. Lihat edisi #754 .
+Perbaiki deteksi keyboard yang hancur.
+Perbarui tanda regex berdasarkan pengaturan desimal. Lihat edisi #771 .
+Tata Letak
+Beberapa tata letak yang diperbarui: Oriya, Tamil, Telugu, Malayalam, Hindi, Kannada, Bengali, Gujarati, Marathi, Nepali, Punjabi & Urdu; semua berkat durga598 !
+Bahasa
+Perbaiki terjemahan bahasa Prancis. Menutup edisi #781
+Dokumen
+Perbaiki demo tata letak pertama.
+Versi 1.30.1 (2019-06-24)
+Inti:
+Perbaiki fokus saat keyboard disetel sebagai saat ini. Memperbaiki masalah #744 .
+Versi 1.30.0 (2019-06-18)
+Inti:
+The displaypilihan untuk tombol tindakan sekarang akan memungkinkan html (termasuk titik dua), misalnya <span style="color:red">Panic!</span>.
+Bahasa:
+Tambahkan terjemahan Ceko. Lihat PR #742 ; terima kasih @xmorave2 !
+Meta:
+Quunit & jQuery yang diperbarui bermigrasi.
