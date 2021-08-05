@@ -4,6 +4,240 @@ Link github ; https://github.com/wahyu9kdl/Virtual-Keyboard-Master-A-Z
 Link website ; https://www.awgroupchannel.my.id/p/licensi.html
 Distributed ; https://github.com/wahyu9kdl
 
+<b>Virtual Keyboard</b>
+
+Sebuah keyboard virtual adalah komponen perangkat lunak yang memungkinkan masukan karakter tanpa perlu tombol fisik. [1] Interaksi dengan keyboard virtual sebagian besar terjadi melalui antarmuka layar sentuh , tetapi juga dapat terjadi dalam bentuk yang berbeda di virtual atau augmented reality .
+
+
+Mengetik di keyboard virtual iPad
+
+JenisSunting
+
+Pada komputer desktop, keyboard virtual mungkin menyediakan mekanisme input alternatif bagi pengguna dengan disabilitas yang tidak dapat menggunakan keyboard konvensional, atau untuk pengguna bi atau multibahasa yang sering beralih di antara rangkaian karakter atau abjad yang berbeda, yang mungkin membingungkan dari waktu ke waktu. . Meskipun keyboard perangkat keras tersedia dengan tata letak papan ketik ganda (misalnya huruf Cyrillic /Latin dalam berbagai tata letak nasional), papan ketik di layar menyediakan pengganti yang praktis saat bekerja di stasiun yang berbeda atau di laptop, yang jarang dilengkapi dengan tata letak ganda.
+
+Keyboard virtual dapat dikategorikan berdasarkan aspek berikut:
+
+Keyboard virtual dengan tata letak keyboard layar sentuh atau area penginderaan [2]
+
+Tata letak keyboard yang diproyeksikan secara optik atau pengaturan serupa dari "tombol" atau area penginderaan [3] [4]
+
+Gerakan tangan dan jari manusia yang terdeteksi secara optik [5]
+
+Keyboard virtual online untuk beberapa bahasa yang tidak memerlukan perubahan pengaturan OS [6]
+
+Tergantung pada perangkat mana keyboard yang digunakan ( desktop / mobile / virtual reality / augmented reality )
+
+Di Internet, berbagai keyboard virtual JavaScript telah dibuat, memungkinkan pengguna untuk mengetik bahasa mereka sendiri di keyboard asing, terutama di kafe Internet. Layar multisentuh memungkinkan kemungkinan untuk membuat keyboard chorded virtual untuk komputer tablet , [7] layar sentuh, bantalan sentuh, dan sarung tangan berkabel . [8] [9]
+
+Perangkat selulerSunting
+
+Keyboard virtual biasanya digunakan sebagai metode input di layar pada perangkat tanpa keyboard fisik, di mana tidak ada ruang untuk keyboard, seperti komputer saku , personal digital assistant (PDA), komputer tablet atau ponsel yang dilengkapi layar sentuh . Teks biasanya dimasukkan baik dengan mengetuk keyboard virtual atau penelusuran jari. [10] Keyboard virtual juga digunakan sebagai fitur perangkat lunak emulasi untuk sistem yang memiliki tombol lebih sedikit daripada yang dimiliki keyboard komputer.
+
+Perkembangan sejarahSunting
+
+PDASunting
+
+Keyboard virtual pada Pocket PC PDA
+
+Empat pendekatan utama untuk memasukkan teks ke dalam PDA adalah: keyboard virtual yang dioperasikan oleh stylus, keyboard USB eksternal, keyboard tulisan tangan, dan pengenalan goresan. Banyak PDA awal tidak terfokus pada keyboard virtual. Pendekatan sistem operasi seluler Microsoft adalah untuk mensimulasikan keyboard fungsional yang lengkap, yang menghasilkan tata letak keyboard yang sedikit kelebihan beban. [11] Masalah utama yang dihadapi PDA awal adalah dukungan untuk teknologi multi-sentuh, dan sebagai akibatnya, masalah kegunaan bagi pengguna.
+
+iPhone pertamaSunting
+
+Ketika Apple menghadirkan iPhone pertama pada tahun 2007, keputusan untuk tidak menyertakan keyboard fisik dipandang sebagai kerugian bagi perangkat. [12] Tapi Apple membawa teknologi multi-sentuh ke perangkat baru mereka, yang memungkinkan mereka untuk mengatasi masalah kegunaan PDA. Pola desain keyboard virtual Apple telah menjadi standar pada perangkat seluler saat ini.
+
+Implementasi dan penggunaanSunting
+
+Kedua sistem operasi seluler yang paling umum, Android dan iOS , memberi komunitas pengembang kemungkinan untuk mengembangkan keyboard virtual khusus secara individual.
+
+AndroidSunting
+
+Pengaturan Keyboard Android
+
+The Android SDK menyediakan disebut InputMethodService. [13] Layanan ini menyediakan implementasi standar dari metode input, yang dari implementasi akhir dapat diturunkan dan disesuaikan, memungkinkan komunitas pengembangan Android untuk mengimplementasikan tata letak keyboard mereka sendiri. InputMethodService dikirimkan bersamanya di Tampilan Keyboard. [14] Sementara Layanan InputMethod dapat digunakan untuk menyesuaikan input tombol dan isyarat, Kelas Keyboard memuat deskripsi XML keyboard dan menyimpan atribut tombol. [15]
+
+Akibatnya, dimungkinkan untuk menginstal versi keyboard yang berbeda pada perangkat Android , dan keyboard hanyalah sebuah aplikasi; aktivasi sederhana melalui menu pengaturan Android dimungkinkan. [16]
+
+iOSSunting
+
+Apple iOS UIInputViewController
+
+Apple juga memberikan kemungkinan bagi komunitas untuk mengembangkan keyboard khusus, tetapi tidak memberikan akses apa pun ke kamus atau pengaturan keyboard umum. Selanjutnya iOS secara otomatis beralih antara sistem dan keyboard khusus, jika pengguna memasukkan teks ke dalam bidang input teks. [17] [18]
+
+UIInputViewController adalah pengontrol tampilan utama untuk ekstensi aplikasi keyboard khusus. Kontroler ini menyediakan metode berbeda untuk penerapan keyboard kustom, seperti antarmuka pengguna untuk keyboard kustom, memperoleh leksikon tambahan, atau mengubah bahasa utama keyboard kustom. [19]
+
+Kinerja entri teksSunting
+
+Di samping implementasi keyboard virtual klasik Android , iOS dan keyboard kustom, seperti SwiftKey misalnya, menyediakan fitur berbeda untuk meningkatkan kegunaan dan efisiensi keyboard mereka.
+
+Koreksi otomatis dan pemeriksa ejaanSunting
+
+Platform Android menawarkan kerangka kerja pemeriksa ejaan yang menawarkan kemungkinan untuk mengimplementasikan dan mengakses pemeriksaan ejaan dalam aplikasi itu sendiri. Kerangka kerja adalah salah satu API Layanan Teks yang ditawarkan oleh platform Android. Berdasarkan teks yang disediakan, objek sesi mengembalikan saran ejaan yang dihasilkan oleh pemeriksa ejaan. [20] [21]
+
+iOS menggunakan kelas UITextChecker, sebuah objek yang digunakan untuk memeriksa string (biasanya teks dokumen) untuk kata-kata yang salah eja, umumnya dikenal sebagai koreksi otomatis Apple. Pemeriksaan ejaan UITextChecker menggunakan leksikon untuk bahasa tertentu. Itu dapat diberitahu untuk mengabaikan kata-kata tertentu ketika memeriksa ejaan dokumen tertentu dan itu dapat mempelajari kata-kata baru, yang menambahkan kata-kata itu ke leksikon. [22]
+
+Saran kataSunting
+
+Berbagai karya ilmiah di awal tahun 2000-an menunjukkan bahkan sebelum penemuan ponsel pintar, bahwa memprediksi kata-kata, berdasarkan apa yang diketik pengguna, sangat membantu untuk meningkatkan kecepatan mengetik. [23] [24] Pada awal pengembangan fitur keyboard ini, prediksi terutama didasarkan pada kamus statis. Google menerapkan metode prediksi pada tahun 2013 di Android 4.4. Perkembangan ini terutama didorong oleh penyedia keyboard pihak ketiga, seperti SwiftKey dan Swype . [25] Keduanya menyediakan mesin pencari kata yang kuat dengan database yang sesuai. [26] Pada tahun 2014 Apple menghadirkan iOS 8 [27] yang mencakup fitur pengetikan prediktif baru yang disebut QuickType, yang menampilkan prediksi kata di atas keyboard saat pengguna mengetik.
+
+Mengetik isyaratSunting
+
+iOS dan Android memungkinkan pengembang untuk mengganti keyboardnya dengan aplikasi keyboard mereka sendiri. Hal ini telah menyebabkan eksperimen dan fitur baru, seperti fitur mengetik isyarat yang masuk ke keyboard resmi Android setelah membuktikan dirinya di keyboard pihak ketiga. Penelitian oleh Google sendiri mengkonfirmasi bahwa pengetikan isyarat meningkatkan tingkat pengetikan sebesar 22% dan menurunkan tingkat kesalahan hingga mendekati 0%. [28] Google lebih lanjut menunjukkan bahwa metode mengetik isyarat juga berguna pada jam tangan pintar. Penelitian ilmiah mereka terutama didasarkan pada penelitian yang dibuat oleh I. Scott MacKenzie dan makalah tentang pemodelan sentuhan jari dengan hukum fitts.
+
+Umpan balik haptikSunting
+
+Umpan balik haptic memberikan konfirmasi taktil bahwa kunci telah berhasil dipicu yaitu pengguna mendengar dan merasakan "klik" saat tombol ditekan. Memanfaatkan histeresis , nuansa kunci fisik dapat ditiru ke tingkat yang lebih besar. Dalam hal ini, ada "klik" awal yang terdengar dan terasa saat tombol virtual ditekan, tetapi kemudian saat tekanan jari berkurang setelah tombol dipicu, ada suara "buka klik" lebih lanjut dan sensasi seolah-olah kunci fisik muncul kembali ke keadaan semula yang tidak diklik. Perilaku ini dijelaskan dalam makalah tahun 2004 Aleks Oniszczak & Scott Mackenzie "A Comparison of Two Input Methods for Keypads on Mobile Devices" yang pertama kali memperkenalkan umpan balik haptic dengan histeresis pada keyboard virtual.
+
+Jenis keyboard khususSunting
+
+Keyboard diperlukan di berbagai area digital. Tidak hanya smartphone yang membutuhkan keyboard virtual, perangkat yang menciptakan dunia virtual, misalnya kacamata virtual reality atau augmented reality , perlu menyediakan kemungkinan input teks.
+
+Keyboard virtual optikSunting
+
+Sebuah keyboard virtual optik ditemukan dan dipatenkan oleh para insinyur IBM pada tahun 1992. [30] Ini secara optik mendeteksi dan menganalisis gerakan tangan dan jari manusia dan menafsirkannya sebagai operasi pada perangkat input yang tidak ada secara fisik seperti permukaan yang memiliki tombol yang dicat. Dengan cara itu memungkinkan untuk meniru jenis tak terbatas dari perangkat input yang dioperasikan secara manual seperti mouse atau keyboard. Semua unit input mekanis dapat diganti dengan perangkat virtual tersebut, dioptimalkan untuk aplikasi saat ini dan untuk fisiologi pengguna yang mempertahankan kecepatan, kesederhanaan, dan kejelasan input data manual.
+
+Keyboard augmented realitySunting
+
+Ide dasar dari keyboard virtual dalam lingkungan augmented reality adalah untuk memberikan pengguna kemungkinan input teks. Pendekatan yang umum adalah membuat keyboard datar menjadi augmented reality, misalnya menggunakan Unity TouchScreenKeyboard. The Microsoft HoloLens memungkinkan pengguna untuk titik di huruf pada keyboard dengan menggerakkan kepalanya. [31]
+
+Pendekatan lain diteliti oleh KJIST U-VR Lab Korea pada tahun 2003. Saran mereka adalah menggunakan perangkat yang dapat dikenakan untuk melacak gerakan jari untuk mengganti keyboard fisik dengan keyboard virtual. Mereka juga mencoba memberikan umpan balik audiovisual kepada pengguna, ketika sebuah kunci tertembak. Ide dasarnya adalah untuk memberi pengguna cara yang lebih alami untuk memasukkan teks, berdasarkan apa yang biasa dia lakukan. [32]
+
+Keyboard realitas virtualSunting
+
+Tantangannya, seperti dalam augmented reality , adalah memberi pengguna kemungkinan untuk memasukkan teks dalam lingkungan yang sepenuhnya virtual. Satu masalah besar adalah bahwa sebagian besar sistem augmented reality di pasar tidak melacak tangan pengguna. Begitu banyak sistem yang tersedia memberikan kemungkinan untuk menunjuk huruf. [33]
+
+Pada bulan September 2016, Google merilis aplikasi keyboard virtual untuk headset realitas virtual Daydream [34] mereka . Untuk memasukkan teks, pengguna dapat menunjuk huruf tertentu dengan pengontrol Daydream. [35]
+
+Pada bulan Februari 2017, Logitech mempresentasikan pendekatan eksperimental untuk membawa keyboard mereka ke dalam lingkungan virtual. Dengan Vive Tracker dan keyboard gaming Logitech G, Anda dapat melacak setiap gerakan jari dengan tepat, tanpa menggunakan sarung tangan jenis apa pun. 50 dari paket tersebut dikirim ke pengembang eksklusif, memungkinkan mereka, dalam kombinasi kit pengembang BRIDGE Logitche, untuk menguji dan bereksperimen dengan teknologi baru. [36] [37]
+
+Pertimbangan keamananSunting
+
+Keyboard virtual dapat digunakan dalam beberapa kasus untuk mengurangi risiko pencatatan penekanan tombol . [38] Misalnya, layanan perbankan online Westpac menggunakan keyboard virtual untuk entri kata sandi, seperti halnya TreasuryDirect (lihat gambar). Lebih sulit bagi malware untuk memantau tampilan dan mouse untuk mendapatkan data yang dimasukkan melalui keyboard virtual, daripada memantau penekanan tombol yang sebenarnya. Namun dimungkinkan, misalnya dengan merekam tangkapan layar secara berkala atau pada setiap klik mouse. [39] [40]
+
+
+Layar login TreasuryDirect, menampilkan keyboard virtual
+
+Penggunaan papan ketik di layar tempat pengguna "mengetik" dengan klik mouse dapat meningkatkan risiko pengungkapan kata sandi oleh penelusuran bahu , karena:
+
+Pengamat biasanya dapat melihat layar dengan lebih mudah (dan tidak terlalu mencurigakan) daripada keyboard, dan melihat karakter mana yang dituju mouse.
+
+Beberapa implementasi keyboard di layar dapat memberikan umpan balik visual dari "tombol" yang diklik, misalnya dengan mengubah warnanya secara singkat. Hal ini membuat lebih mudah bagi pengamat untuk membaca data dari layar. Dalam kasus terburuk, implementasi dapat meninggalkan fokus pada "kunci" yang paling baru diklik sampai kunci virtual berikutnya diklik, sehingga memberikan waktu bagi pengamat untuk membaca setiap karakter bahkan setelah mouse mulai bergerak ke karakter berikutnya.
+
+Seorang pengguna mungkin tidak dapat "menunjuk dan mengklik" secepat mereka bisa mengetik di keyboard, sehingga memudahkan pengamat.
+
+
+Virtual Keyboard Master A-Z
+
+Original by Aw Product, updated & maintained by Aw Group Channel
+
+
+FITUR Virtual Keyboard Master A-Z
+
+1. Custom: Contenteditable
+2. QWERTY Text
+3. QWERTY Password
+4. QWERTY (mod) Text Area
+5. International
+6. Alphabetical
+7. Colemak
+8. Dvorak
+9. Num Pad
+10. Custom: Hex
+11. Custom: Meta Sets
+12. Custom: Junk
+13. Custom: Mapped Keys
+14. Custom: Hidden
+15. Custom: iPad
+16. Custom: iPad email
+17. Custom: Lockable
+
+Layout Home Page [ Tampilan Halaman ] Utama Terdiri dari ; 
+[  ] Home(current)
+[  ] Basic
+[  ] Layouts 
+[  ] Extensions 
+[  ] Alt-keys
+[  ] Autocomplete
+[  ] Caret
+[  ] Extender
+[  ] Keyset
+[  ] Mobile
+[  ] Mobile v1.4
+[  ] Navigate
+[  ] Scramble
+[  ] Typing
+[  ] editor.html
+[  ] jsbin.box.html
+[  ] Donasi PayPal
+[  ]  Playground
+[  ] Pengembangan , Dokumentasi , dll
+
+Sedikit Pengertian dari; 
+Keyboard virtual adalah komponen perangkat lunak yang memungkinkan input karakter tanpa memerlukan tombol fisik. Dapatkan keyboard virtual Master A-Z ini di Indonesia. Cek Penawaran Keyboard yang kami sediakan.
+
+
+Cara Penggunaan 
+1. Untuk digunakan secara langsung
+2. Untuk digunakan oleh Kelas Progamer
+3. Penambahan Fitur pada Aplikasi maupun situs website
+4. Untuk Pengembangan Developer
+5. Sebagai media virtual keyboard 
+6. Go to Start , then select Settings > Ease of Access > Keyboard, and turn on the toggle under Use the On-Screen Keyboard.
+
+
+
+***Keunggulan yang akan anda Dapat kan diantaranya :
+Anda akan dapat menggunakan varian keybord virtual dengan 17 + jenis Keyboard yang tersedia  dalam satu aplikasi Virtual Keyboard Master ini.  Bisa digunakan untuk Para progamer  dan Developer untuk mengembangkan Progam maupun marketting  online.  Berguna juga Untuk Pengembangan Potensi bagi para Programer Indonesia.
+
+♻️ Keyboard virtual di layar yang disematkan di dalam jendela browser yang akan muncul saat bidang entri tertentu difokuskan.Pengguna kemudian dapat mengetik dan melihat pratinjau input mereka sebelum Menerima atau Membatalkan.Itu dapat diatur untuk selalu tetap terbuka, dan untuk tidak menggunakan pratinjau
+
+
+Link github ; https://github.com/wahyu9kdl/Virtual-Keyboard-Master-A-Z
+Link website ; https://www.awgroupchannel.my.id/p/licensi.html
+released : https://github.com/wahyu9kdl/Virtual-Keyboard-Master-A-Z/releases/tag/V.01
+
+Dokumentasi : 
+https://github.com/wahyu9kdl/Virtual-Keyboard-Master-A-Z/blob/main/Screenshot_20210803-231453_anWriter%20free.jpg
+
+https://github.com/wahyu9kdl/Virtual-Keyboard-Master-A-Z/blob/main/Screenshot_20210803-233834_anWriter%20free.jpg
+
+Versi Virtual Keyboard Master
+1. Keyboard-master.zip
+2. Virtual Keyboard Master A-Z
+3. Virtual Keyboard Master A-Z(v1.30.3)
+4. "keyboard-layouts-microsoft.js"
+5. Virtual Keyboard Microsoft v1
+
+LICENSI
+wahyu9kdl/Virtual-Keyboard-Master-A-Z is licensed under the
+
+Creative Commons Zero v1.0 Universal
+
+The Creative Commons CC0 Public Domain Dedication waives copyright interest in a work you've created and dedicates it to the world-wide public domain. Use CC0 to opt out of copyright entirely and ensure your work has the widest reach. As with the Unlicense and typical software licenses, CC0 disclaims warranties. CC0 is very similar to the Unlicense.
+
+Permissions
+
+ Commercial use
+
+ Modification
+
+ Distribution
+
+ Private use
+
+Limitations
+
+ Liability
+
+ Trademark use
+
+ Patent use
+
+ Warranty
+
+Conditions
+
+https://github.com/wahyu9kdl/Virtual-Keyboard-Master-A-Z/blob/main/LICENSE
+
 
 Versi Virtual Keyboard Master
 1. Keyboard-master.zip
