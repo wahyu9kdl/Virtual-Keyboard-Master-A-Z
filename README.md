@@ -1,10 +1,11 @@
 # Virtual-Keyboard-Master-A-Z
 Virtual Keyboard Master A-Z  Original by Aw Product, updated &amp; maintained by Aw Group Channel
 Link github ; https://github.com/wahyu9kdl/Virtual-Keyboard-Master-A-Z
-Link website ; https://www.awgroupchannel.my.id/p/licensi.html
+Link website ; https://www.awgroupchannel.my.id/2021/08/virtual.html
+Link License Website ; https://www.awgroupchannel.my.id/p/license.html
 Distributed ; https://github.com/wahyu9kdl
 <b>ARTIKEL</b>
-https://www.awgroupchannel.my.id/2021/08/virtual.html
+
 <div class="separator" style="clear: both; text-align: center;"><a href="https://www.awgroupchannel.my.id/2021/08/virtual.html" style="margin-left: 1em; margin-right: 1em;"><img border="0" data-original-height="1520" data-original-width="720" height="640" src="https://1.bp.blogspot.com/-FRqncue9bEo/YQs0gs8cC1I/AAAAAAAADts/PIsi8GUG_JIzcer3rjih591tm6D6_CsVQCLcBGAsYHQ/w304-h640/Screenshot_20210803-231524_anWriter%2Bfree.jpg" width="304" /></a></div>
 <b>Virtual Keyboard</b>
 
